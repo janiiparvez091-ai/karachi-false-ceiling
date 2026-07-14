@@ -136,3 +136,16 @@ footer{
   color:white;
   padding:15px;
 }
+b.gallery{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
