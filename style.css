@@ -176,7 +176,10 @@ box-shadow:0 3px 10px rgba(0,0,0,0.3);
 }
 
 header img{
-    width:220px;
+    width:100%;
+    max-width:350px;
     height:auto;
     border-radius:15px;
+    display:block;
+    margin:0 auto 15px;
 }
