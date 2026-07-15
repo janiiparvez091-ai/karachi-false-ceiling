@@ -181,13 +181,10 @@ header img{
     border-radius:12px;
     display:block;
     margin:0 auto 15px;
-}
-nav {
+}  nav {
     margin-top: 20px;
-    text-align: center;
-}
-
-nav a {
+    text-align:center;
+} nav a {
     display: inline-block;
     background: #222;
     color: white;
