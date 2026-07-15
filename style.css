@@ -182,3 +182,22 @@ header img{
     display:block;
     margin:0 auto 15px;
 }
+bnav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background: #25D366;
+}
