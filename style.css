@@ -207,4 +207,6 @@ bnav a {
     margin: 5px;
     border-radius: 8px;
     font-size: 15px;
+}b.contact-buttons a {
+    margin: 8px;
 }
