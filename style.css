@@ -1,215 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+    font-family:'Poppins',Arial,sans-serif;
+    background:#f4f8fc;
+    color:#333;
 }
 
-header{
-background:#0d6efd;
-color:white;
-text-align:center;
-padding:30px;
+
+/* Navbar */
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,0.1);
 }
 
-nav{
-background:#222;
-text-align:center;
-padding:15px;
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:#0d6efd;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
-section{
-padding:30px;
-background:white;
-margin:20px;
-border-radius:10px;
+.navbar ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-body{
-  font-family: Arial;
-  margin:0;
-  text-align:center;
-  background:#f5f5f5;
+.navbar ul li a:hover{
+    color:#0d6efd;
 }
 
-header{
-  background:#222;
-  color:white;
-  padding:30px;
-}
 
-section{
-  background:white;
-  margin:20px;
-  padding:20px;
-  border-radius:10px;
-}
+/* Hero Section */
 
-.btn{
-  display:inline-block;
-  background:#25D366;
-  color:white;
-  padding:12px 25px;
-  text-decoration:none;
-  border-radius:5px;
-}
+.hero{
+    height:600px;
+    background:
+    linear-gradient(rgba(13,110,253,.75),rgba(10,88,202,.75)),
+    url("hero.jpg");
 
-footer{
-  background:#222;
-  color:white;
-  padding:15px;
-}body{
-  font-family: Arial;
-  margin:0;
-  text-align:center;
-  background:#f5f5f5;
-}
+    background-size:cover;
+    background-position:center;
 
-header{
-  background:#222;
-  color:white;
-  padding:30px;
-}
-
-section{
-  background:white;
-  margin:20px;
-  padding:20px;
-  border-radius:10px;
-}
-
-.btn{
-  display:inline-block;
-  background:#25D366;
-  color:white;
-  padding:12px 25px;
-  text-decoration:none;
-  border-radius:5px;
-}
-
-footer{
-  background:#222;
-  color:white;
-  padding:15px;
-}body{
-  font-family: Arial;
-  margin:0;
-  text-align:center;
-  background:#f5f5f5;
-}
-
-header{
-  background:#222;
-  color:white;
-  padding:30px;
-}
-
-section{
-  background:white;
-  margin:20px;
-  padding:20px;
-  border-radius:10px;
-}
-
-.btn{
-  display:inline-block;
-  background:#25D366;
-  color:white;
-  padding:12px 25px;
-  text-decoration:none;
-  border-radius:5px;
-}
-
-footer{
-  background:#222;
-  color:white;
-  padding:15px;
-}
-b.gallery{
-display:flex;
-gap:15px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.gallery img{
-width:300px;
-height:200px;
-object-fit:cover;
-border-radius:10px;
-}
-.gallery{
-display:flex;
-gap:15px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.gallery img{
-width:300px;
-height:220px;
-object-fit:cover;
-border-radius:12px;
-}
-.float-whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 3px 10px rgba(0,0,0,0.3);
-}
-header img{
-    width:300px;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px;
-    display:block;
-    margin:0 auto 15px;
-}  nav {
-    margin-top: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-} nav a {
-    display: inline-block;
-    background: #222;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 8px;
-    font-size: 15px;
+    color:white;
 }
 
-nav a:hover {
-    background: #25D366;
+.overlay{
+    padding:20px;
 }
-bnav a {
-    display: inline-block;
-    background: #222;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 8px;
-    font-size: 15px;
-}b.contact-buttons a {
-    margin: 8px;
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:20px;
 }
-b.contact-buttons a{
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
     margin:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#084298;
+}
+
+.btn2{
+    background:#25D366;
+}
+
+.btn2:hover{
+    background:#128C7E;
+}
+
+
+/* Floating WhatsApp */
+
+.float-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 22px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}  
+/* Sections */
+
+section{
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    padding:40px 30px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+section h2{
+    color:#0d6efd;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+
+/* Services Cards */
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f8fbff;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #e5efff;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+
+/* Contact */
+
+.contact p{
+    font-size:18px;
+    margin:12px;
+}
+
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+
+/* Mobile Design */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    height:500px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+section{
+    margin:20px 10px;
+    padding:25px 15px;
+}
+
+section h2{
+    font-size:26px;
+}
+
+.btn{
+    padding:12px 22px;
+}
+
 }
