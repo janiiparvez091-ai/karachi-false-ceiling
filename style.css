@@ -256,3 +256,56 @@ section h2{
 }
 
 }
+.reviews{
+    background:#fff;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:32px;
+    color:#222;
+}
+
+.review-subtitle{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.review-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    background:#f8f8f8;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 2px 10px #ddd;
+}
+
+.stars{
+    color:#ffb400;
+    font-size:22px;
+}
+
+.review-card p{
+    line-height:1.6;
+}
+
+.review-card h4{
+    color:#0d6efd;
+}
+
+.review-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#25d366;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+}
