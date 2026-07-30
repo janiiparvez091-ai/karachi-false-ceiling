@@ -382,3 +382,22 @@ section h2{
     margin-bottom:35px;
     font-weight:700;
 }
+.areas{
+    text-align:center;
+}
+
+.area-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:25px;
+}
+
+.area-list span{
+    background:#0d6efd;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+}
