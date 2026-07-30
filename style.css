@@ -49,7 +49,7 @@ body{
 }
 
 
-/* Hero Section */
+/* Hero */
 
 .hero{
     height:600px;
@@ -110,29 +110,41 @@ body{
 }
 
 
-/* Floating WhatsApp */
+/* Floating WhatsApp Button */
+
 .whatsapp-btn{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
 
 .whatsapp-btn img{
-    width: 34px;
-    height: 34px;
-    display: block;
+    width:35px;
+    height:35px;
 }
 
-Services Cards */
+
+/* Sections */
+
+section{
+    padding:60px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:35px;
+}
+/* Services Cards */
 
 .service-box{
     display:grid;
@@ -184,68 +196,10 @@ Services Cards */
 }
 
 
-/* Contact */
+/* Reviews */
 
-.contact p{
-    font-size:18px;
-    margin:12px;
-}
-
-
-/* Footer */
-
-footer{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-
-
-/* Mobile Design */
-
-@media(max-width:768px){
-
-.navbar{
-    flex-direction:column;
-    gap:15px;
-}
-
-.navbar ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-}
-
-.hero{
-    height:500px;
-}
-
-.hero h1{
-    font-size:30px;
-}
-
-.hero p{
-    font-size:15px;
-}
-
-section{
-    margin:20px 10px;
-    padding:25px 15px;
-}
-
-section h2{
-    font-size:26px;
-}
-
-.btn{
-    padding:12px 22px;
-}
-
-}
 .reviews{
-    background:#fff;
+    background:white;
     padding:50px 20px;
     text-align:center;
 }
@@ -297,47 +251,122 @@ section h2{
     border-radius:5px;
     text-decoration:none;
 }
-.faq p{
-display:none;
-margin-top:15px;
-}
 
-.faq h3{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
 
-.faq button{
-border:none;
-background:#0d6efd;
-color:white;
-font-size:22px;
-width:35px;
-height:35px;
-border-radius:50%;
-cursor:pointer;
-}
+/* FAQ */
+
 .faq-question{
-width:100%;
-background:white;
-border:none;
-padding:18px;
-font-size:18px;
-font-weight:bold;
-text-align:left;
-cursor:pointer;
-display:flex;
-justify-content:space-between;
-border-bottom:1px solid #ddd;
+    width:100%;
+    background:white;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #ddd;
 }
 
 .faq-answer{
-display:none;
-padding:15px;
-background:#f8f8f8;
+    display:none;
+    padding:15px;
+    background:#f8f8f8;
 }
 
 .faq-question span{
-font-size:25px;
+    font-size:25px;
+}
+
+
+/* Contact */
+
+.contact p{
+    font-size:18px;
+    margin:12px;
+}
+
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+/* Mobile Design */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.logo{
+    text-align:center;
+}
+
+
+.hero{
+    height:500px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+
+section{
+    padding:40px 15px;
+}
+
+
+section h2{
+    font-size:26px;
+}
+
+
+.btn{
+    padding:12px 22px;
+}
+
+
+/* Mobile WhatsApp Button */
+
+.whatsapp-btn{
+    width:55px;
+    height:55px;
+    right:15px;
+    bottom:15px;
+}
+
+.whatsapp-btn img{
+    width:32px;
+    height:32px;
+}
+
+
+.review-card{
+    width:100%;
+}
+
+
+.gallery img{
+    height:200px;
+}
+
 }
