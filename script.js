@@ -1,38 +1,31 @@
 console.log("Karachi False Ceiling Website Loaded");
-document.querySelectorAll(".faq button").forEach(button=>{
-    button.addEventListener("click",()=>{
-        let answer = button.parentElement.nextElementSibling;
 
-        if(answer.style.display==="block"){
-            answer.style.display="none";
-            button.innerHTML="+";
-        }else{
-            answer.style.display="block";
-            button.innerHTML="-";
-        }
-    });
-});
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach(btn => {
 
-btn.addEventListener("click", () => {
+    btn.addEventListener("click", () => {
 
-let answer = btn.nextElementSibling;
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector("span");
 
-document.querySelectorAll(".faq-answer").forEach(item => {
-if(item !== answer){
-item.style.display = "none";
-}
-});
+        // Close all other answers
+        document.querySelectorAll(".faq-answer").forEach(item => {
+            if (item !== answer) {
+                item.style.display = "none";
+                item.previousElementSibling.querySelector("span").textContent = "+";
+            }
+        });
 
-if(answer.style.display === "block"){
-answer.style.display = "none";
-}
-else{
-answer.style.display = "block";
-}
+        // Toggle current answer
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            icon.textContent = "+";
+        } else {
+            answer.style.display = "block";
+            icon.textContent = "−";
+        }
 
-});
+    });
 
 });
