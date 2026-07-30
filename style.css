@@ -309,3 +309,24 @@ section h2{
     border-radius:5px;
     text-decoration:none;
 }
+.faq p{
+display:none;
+margin-top:15px;
+}
+
+.faq h3{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.faq button{
+border:none;
+background:#0d6efd;
+color:white;
+font-size:22px;
+width:35px;
+height:35px;
+border-radius:50%;
+cursor:pointer;
+}
