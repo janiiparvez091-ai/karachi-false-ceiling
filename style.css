@@ -330,3 +330,26 @@ height:35px;
 border-radius:50%;
 cursor:pointer;
 }
+.faq-question{
+width:100%;
+background:white;
+border:none;
+padding:18px;
+font-size:18px;
+font-weight:bold;
+text-align:left;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #ddd;
+}
+
+.faq-answer{
+display:none;
+padding:15px;
+background:#f8f8f8;
+}
+
+.faq-question span{
+font-size:25px;
+}
