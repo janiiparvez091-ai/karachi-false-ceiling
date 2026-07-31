@@ -47,39 +47,33 @@ body{
 .navbar ul li a:hover{
     color:#0d6efd;
 }
-
-
-/* Hero */
-
 .hero{
-    height:600px;
-    background:
-    linear-gradient(rgba(13,110,253,.75),rgba(10,88,202,.75)),
-    url("hero.jpg");
+    position: relative;
+    overflow: hidden;
+}
 
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
+.hero-image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
 }
 
 .overlay{
-    padding:20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35); /* Blue blur hata kar halka black overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-.hero h1{
-    font-size:45px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:18px;
-    margin-bottom:30px;
-}
 
 
 /* Buttons */
